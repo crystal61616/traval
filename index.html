@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="여행 블로그">
+    <title>여행 블로그</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>여행 블로그</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">여행 정보</a></li>
+                    <li><a href="#">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>안녕하세요! 여행을 떠나고 싶은 당신을 위한 블로그</h2>
+                <p>전 세계의 멋진 여행지와 팁을 소개하는 곳입니다. 함께 여행을 떠나볼까요?</p>
+            </section>
+
+            <!-- 이미지 슬라이드 -->
+            <section class="image-slider">
+                <div class="slider-wrapper">
+                    <img src="image1.jpg" alt="여행지1">
+                    <img src="image2.jpg" alt="여행지2">
+                    <img src="image3.jpg" alt="여행지3">
+                </div>
+            </section>
+
+            <!-- 게시글 추가 폼 -->
+            <section class="post-form">
+                <h2>새 게시글 작성</h2>
+                <form id="postForm">
+                    <input type="text" id="title" placeholder="게시글 제목" required>
+                    <textarea id="content" placeholder="게시글 내용" rows="5" required></textarea>
+                    <button type="submit">게시글 추가</button>
+                </form>
+            </section>
+
+            <!-- 동적으로 추가된 게시글 리스트 -->
+            <section class="blog-posts">
+                <h2>최근 게시물</h2>
+                <div class="posts" id="posts">
+                    <!-- 게시글이 여기에 추가됨 -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 여행 블로그. 모든 권리 보유.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* 본문 스타일 */
+main {
+    padding: 20px 0;
+    background-color: white;
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* 게시글 작성 폼 스타일 */
+.post-form {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.post-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.post-form input,
+.post-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.post-form button:hover {
+    background-color: #0056b3;
+}
+
+/* 동적으로 추가된 게시글 스타일 */
+.blog-posts {
+    text-align: center;
+}
+
+.blog-posts h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    margin: 0;
+}
+
+.post-card p {
+    padding: 15px;
+    color: #666;
+}
+
+.post-card a {
+    display: block;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px 0 15px;
+    border-radius: 5px;
+}
+
+.post-card a:hover {
+    background-color: #0056b3;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-card {
+        width: 80%;
+    }
+}
+
+/* 이미지 슬라이드 스타일 */
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
